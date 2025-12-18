@@ -1,0 +1,21 @@
+# Build output
+/bin/
+/build/
+/target/
+
+# Eclipse / IDE artifacts
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+
+# OS / temp files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Node/npm cache (if any frontend assets)
+node_modules/
+dist/
