@@ -97,6 +97,25 @@ try (Connection conn = Condb.getConnection();
           </div>
         </div>
       </form>
+      <div class="split" style="margin-top:18px">
+        <button class="btn" type="button" data-gate-guide-toggle="#gateGuideEdit">RKSI 표준 게이트 코드 안내</button>
+        <a class="btn" href="https://www.ifatc.org/gates?code=RKSI" target="_blank" rel="noopener">IFATC RKSI 페이지</a>
+      </div>
+      <div id="gateGuideEdit" class="guide-panel">
+        <h4>RKSI Gate Naming Quick View</h4>
+        <ul>
+          <li>Concourse Gate 101-132 → <strong>CG101-CG132</strong></li>
+          <li>Maintenance 701-711 → <strong>M701-M711</strong></li>
+          <li>Stand 227-357 → <strong>S227-S357</strong></li>
+          <li>Terminal 2 Gate 231-268 → <strong>T2G231-T2G268</strong></li>
+          <li>Terminal Gate 01-50 → <strong>TG01-TG50</strong></li>
+          <li>Cargo 601-647 → <strong>C601-C647</strong></li>
+        </ul>
+        <p class="hint">
+          전체 매핑 및 지원 기종: <code>docs/gate_codes.md</code>, 
+          <a href="https://www.ifatc.org/gates?code=RKSI" target="_blank" rel="noopener">IFATC RKSI</a>
+        </p>
+      </div>
     </div>
   </div>
 </div>

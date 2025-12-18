@@ -122,5 +122,16 @@
   initTableFilter();
   initToastFromQuery();
   initAutoOccupyTime();
-})();
+  initGateGuideToggle();
 
+  function initGateGuideToggle() {
+    qsa("[data-gate-guide-toggle]").forEach((btn) => {
+      const target = btn.getAttribute("data-gate-guide-toggle");
+      const panel = target ? qs(target) : null;
+      if (!panel) return;
+      btn.addEventListener("click", () => {
+        panel.classList.toggle("show");
+      });
+    });
+  }
+})();

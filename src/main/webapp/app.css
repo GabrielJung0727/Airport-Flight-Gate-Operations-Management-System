@@ -324,3 +324,33 @@ tr:hover td{ background: rgba(255,255,255,.04); }
   text-align:center;
 }
 
+.guide-panel{
+  margin-top: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius2);
+  background: rgba(255,255,255,.04);
+  padding: 14px;
+  display:none;
+}
+[data-theme="light"] .guide-panel{
+  background: rgba(10,13,20,.04);
+}
+.guide-panel.show{
+  display:block;
+  animation: pop .16s ease-out;
+}
+.guide-panel h4{
+  margin:0 0 8px;
+  font-size: 14px;
+}
+.guide-panel ul{
+  margin:0 0 8px 18px;
+  padding:0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+}
+.guide-panel a{
+  color: var(--brand2);
+  font-weight: 700;
+}

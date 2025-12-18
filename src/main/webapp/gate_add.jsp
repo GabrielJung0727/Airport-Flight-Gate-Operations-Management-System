@@ -92,6 +92,25 @@ try (Connection conn = Condb.getConnection();
         팁: 코드/터미널/타입을 통일된 규칙으로 입력하면 조회/리포트가 더 깔끔해집니다.
         (표준 정의: <code>docs/gate_codes.md</code>)
       </p>
+      <div class="split" style="margin-top:8px">
+        <button class="btn" type="button" data-gate-guide-toggle="#gateGuideAdd">RKSI 표준 게이트 코드 안내</button>
+        <a class="btn" href="https://www.ifatc.org/gates?code=RKSI" target="_blank" rel="noopener">IFATC RKSI 페이지</a>
+      </div>
+      <div id="gateGuideAdd" class="guide-panel">
+        <h4>RKSI (Incheon) Standard Mapping</h4>
+        <ul>
+          <li>Concourse Gate 101-132 → <strong>CG101-CG132</strong> (Airline)</li>
+          <li>Maintenance 701-711 → <strong>M701-M711</strong> (Airline)</li>
+          <li>Stand 227-357 → <strong>S227-S357</strong> (Airline)</li>
+          <li>Terminal 2 Gate 231-268 → <strong>T2G231-T2G268</strong> (Airline)</li>
+          <li>Terminal Gate 01-50 → <strong>TG01-TG50</strong> (Airline)</li>
+          <li>Cargo 601-647 → <strong>C601-C647</strong> (Cargo)</li>
+        </ul>
+        <p class="hint">
+          더 자세한 지원 기종 목록은 <code>docs/gate_codes.md</code>와
+          <a href="https://www.ifatc.org/gates?code=RKSI" target="_blank" rel="noopener">IFATC RKSI</a>를 참고하세요.
+        </p>
+      </div>
     </div>
   </div>
 </div>
